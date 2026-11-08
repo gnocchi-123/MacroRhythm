@@ -1,0 +1,30 @@
+# Python and development outputs
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Local credentials and personal configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Private data, generated reports and site outputs
+/data/
+/reports/
+/artifacts/
+/site/
+/local/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store

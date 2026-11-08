@@ -1,0 +1,194 @@
+{
+  "contract_version": "0.1.0",
+  "artifact_kind": "macrolens.run",
+  "exported_at": "2026-11-08T04:45:16.452313+00:00",
+  "provenance": {
+    "repository": "gnocchi-123/MacroLens",
+    "manifest_sha256": "789a1e470f8dda1607ed49fa0620dd28c635b05f032c151ff3be9f64dd384e19"
+  },
+  "result": {
+    "schema_version": 2,
+    "engine_version": "m3-v1",
+    "run_id": "20261108T044516Z-b2d33762a724",
+    "as_of": "2026-10-05T09:00:00+09:00",
+    "generated_at": "2026-11-08T04:45:16.452313+00:00",
+    "previous_run_id": null,
+    "mode": "sample",
+    "model_version": "macro-sector-hypothesis-v1",
+    "model_purpose": "11개 미국 섹터의 정성 가설 계수 — 미검증 연구용",
+    "validation_status": "미검증 연구용",
+    "status": "held",
+    "strict_point_in_time": false,
+    "time_policy": "synthetic-v1",
+    "point_in_time_status": "synthetic",
+    "week_slot": "2026-10-05",
+    "config_hash": "e51a89fc42c3adfa48268f09c120b0a140a40fccba04180745b7921a70e3f7ac",
+    "snapshot_hash": "bb16ee5775ccf4b98ac99fe511723b3ad1b1921abb27795394ed4497d1818f68",
+    "input_hash": "36022fb5efbbb2b625a67a9c10521c24999c6f7d8367567602be81f13bea3d78",
+    "commit_sha": "8f6bfa07ee74587e8ec4fc7e45cc9168895b14cc",
+    "working_tree_dirty": false,
+    "indicators": {
+      "CPIAUCSL": {
+        "value": 0.32941200551195915,
+        "z": 0.9882360165358774,
+        "mean": 3.008814989924493,
+        "std": 2.3342913800216487,
+        "window": 60,
+        "status": "valid",
+        "raw_value": 130.1461315303154,
+        "transformed_value": 5.3156458047511235,
+        "transform": "yoy",
+        "source": "synthetic://macrolens/sample-v1",
+        "observation": {
+          "observation_date": "2026-08-01",
+          "value": 130.1461315303154,
+          "published_at": null,
+          "available_at": "2026-09-15T00:00:00+00:00",
+          "retrieved_at": "2026-10-05T09:00:00+09:00",
+          "vintage_date": "synthetic-v1"
+        },
+        "availability_policy": "가상 이용 가능 시각 (샘플 전용)"
+      },
+      "DGS10": {
+        "value": -0.04512832410685116,
+        "z": -0.13538497232055346,
+        "mean": -0.004762437967415981,
+        "std": 0.25473440774446576,
+        "window": 1260,
+        "status": "valid",
+        "raw_value": 2.592331346535947,
+        "transformed_value": -0.03924964870899306,
+        "transform": "difference_28d",
+        "source": "synthetic://macrolens/sample-v1",
+        "observation": {
+          "observation_date": "2026-10-02",
+          "value": 2.592331346535947,
+          "published_at": null,
+          "available_at": "2026-10-03T00:00:00+00:00",
+          "retrieved_at": "2026-10-05T09:00:00+09:00",
+          "vintage_date": "synthetic-v1"
+        },
+        "availability_policy": "가상 이용 가능 시각 (샘플 전용)"
+      },
+      "INDPRO": {
+        "status": "held",
+        "reason": "지표 누락"
+      },
+      "UNRATE": {
+        "value": -0.12359145503852874,
+        "z": -0.3707743651155862,
+        "mean": -0.05372616157344668,
+        "std": 0.1816121665845666,
+        "window": 60,
+        "status": "valid",
+        "raw_value": 4.576629269367705,
+        "transformed_value": -0.12106329733610544,
+        "transform": "negative_3m",
+        "source": "synthetic://macrolens/sample-v1",
+        "observation": {
+          "observation_date": "2026-08-01",
+          "value": 4.576629269367705,
+          "published_at": null,
+          "available_at": "2026-09-15T00:00:00+00:00",
+          "retrieved_at": "2026-10-05T09:00:00+09:00",
+          "vintage_date": "synthetic-v1"
+        },
+        "availability_policy": "가상 이용 가능 시각 (샘플 전용)"
+      }
+    },
+    "factors": {
+      "inflation": {
+        "value": 0.32941200551195915,
+        "z": 0.9882360165358774,
+        "mean": 3.008814989924493,
+        "std": 2.3342913800216487,
+        "window": 60,
+        "status": "valid",
+        "raw_value": 130.1461315303154,
+        "transformed_value": 5.3156458047511235,
+        "transform": "yoy",
+        "source": "synthetic://macrolens/sample-v1",
+        "observation": {
+          "observation_date": "2026-08-01",
+          "value": 130.1461315303154,
+          "published_at": null,
+          "available_at": "2026-09-15T00:00:00+00:00",
+          "retrieved_at": "2026-10-05T09:00:00+09:00",
+          "vintage_date": "synthetic-v1"
+        },
+        "availability_policy": "가상 이용 가능 시각 (샘플 전용)"
+      },
+      "rates": {
+        "value": -0.04512832410685116,
+        "z": -0.13538497232055346,
+        "mean": -0.004762437967415981,
+        "std": 0.25473440774446576,
+        "window": 1260,
+        "status": "valid",
+        "raw_value": 2.592331346535947,
+        "transformed_value": -0.03924964870899306,
+        "transform": "difference_28d",
+        "source": "synthetic://macrolens/sample-v1",
+        "observation": {
+          "observation_date": "2026-10-02",
+          "value": 2.592331346535947,
+          "published_at": null,
+          "available_at": "2026-10-03T00:00:00+00:00",
+          "retrieved_at": "2026-10-05T09:00:00+09:00",
+          "vintage_date": "synthetic-v1"
+        },
+        "availability_policy": "가상 이용 가능 시각 (샘플 전용)"
+      },
+      "growth": {
+        "status": "held",
+        "reason": "지표 누락"
+      },
+      "employment": {
+        "value": -0.12359145503852874,
+        "z": -0.3707743651155862,
+        "mean": -0.05372616157344668,
+        "std": 0.1816121665845666,
+        "window": 60,
+        "status": "valid",
+        "raw_value": 4.576629269367705,
+        "transformed_value": -0.12106329733610544,
+        "transform": "negative_3m",
+        "source": "synthetic://macrolens/sample-v1",
+        "observation": {
+          "observation_date": "2026-08-01",
+          "value": 4.576629269367705,
+          "published_at": null,
+          "available_at": "2026-09-15T00:00:00+00:00",
+          "retrieved_at": "2026-10-05T09:00:00+09:00",
+          "vintage_date": "synthetic-v1"
+        },
+        "availability_policy": "가상 이용 가능 시각 (샘플 전용)"
+      }
+    },
+    "scores": [],
+    "limitations": [
+      "계수는 정성 가설이며 예측력·투자 효용은 미검증입니다. 점수는 확률·기대수익률이 아닙니다.",
+      "과거 vintage는 날짜 단위이며 장중 발표시각을 보장하지 않습니다. 엄밀한 과거 검증용 유효성은 false입니다.",
+      "현재 수집은 수집 시각부터, 과거 조회는 미국 중부 전일 vintage를 다음날 00:00부터 사용합니다. 최초 이용 가능 시각을 복원한 것이 아닙니다.",
+      "샘플의 값·이용 시각·발표 주기는 합성입니다.",
+      "관측 나이 제한(월별 75일·일별 7일)은 공식 발표 달력이 아닌 잠정 규칙입니다.",
+      "기여도 차이는 산술 비교이며 새 발표·수정·기준창의 인과 분해가 아닙니다.",
+      "가격·매매·백테스트·4주/13주 추세·자동 실행은 미구현입니다."
+    ],
+    "model_kind": "research",
+    "model_status": "frozen",
+    "model_frozen_at": "2026-10-08T13:22:39.386450+00:00",
+    "rationale_document": "docs/model_card.md",
+    "ranking_policy": "average",
+    "kind": "original",
+    "parent_run_id": null,
+    "history": {
+      "week_slot": "2026-10-05",
+      "previous_slot": "2026-09-28",
+      "selection_rule": "같은 모드·시점규칙, 시작 전 완료된 실행 중 주별 마지막 생성 실행; 재현 제외; 같은 연구 모델 계열 (버전 변경은 비교 불가 표시)",
+      "previous_week": null,
+      "last_available": null,
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,570 @@
+{
+  "contract_version": "0.1.0",
+  "artifact_kind": "macrolens.run",
+  "exported_at": "2026-11-08T04:45:16.325709+00:00",
+  "provenance": {
+    "repository": "gnocchi-123/MacroLens",
+    "manifest_sha256": "54a78ce0561fea8aedab1a94449ba1f0052ca1ffc03db781e129a7f7c07080e5"
+  },
+  "result": {
+    "schema_version": 2,
+    "engine_version": "m3-v1",
+    "run_id": "20261108T044516Z-ac88714e96e8",
+    "as_of": "2026-10-05T09:00:00+09:00",
+    "generated_at": "2026-11-08T04:45:16.325709+00:00",
+    "previous_run_id": null,
+    "mode": "sample",
+    "model_version": "macro-sector-hypothesis-v1",
+    "model_purpose": "11개 미국 섹터의 정성 가설 계수 — 미검증 연구용",
+    "validation_status": "미검증 연구용",
+    "status": "research_complete",
+    "strict_point_in_time": false,
+    "time_policy": "synthetic-v1",
+    "point_in_time_status": "synthetic",
+    "week_slot": "2026-10-05",
+    "config_hash": "e51a89fc42c3adfa48268f09c120b0a140a40fccba04180745b7921a70e3f7ac",
+    "snapshot_hash": "4907256e67c1c524ad1d8f6526b1a8b2873543260f49d1e5b0e879bba34026b1",
+    "input_hash": "392c73e61ffb6f8c5a5d7e606f1c9df63fa553674ec318a681734ce1fa2e596b",
+    "commit_sha": "8f6bfa07ee74587e8ec4fc7e45cc9168895b14cc",
+    "working_tree_dirty": false,
+    "indicators": {
+      "CPIAUCSL": {
+        "value": 0.32941200551195915,
+        "z": 0.9882360165358774,
+        "mean": 3.008814989924493,
+        "std": 2.3342913800216487,
+        "window": 60,
+        "status": "valid",
+        "raw_value": 130.1461315303154,
+        "transformed_value": 5.3156458047511235,
+        "transform": "yoy",
+        "source": "synthetic://macrolens/sample-v1",
+        "observation": {
+          "observation_date": "2026-08-01",
+          "value": 130.1461315303154,
+          "published_at": null,
+          "available_at": "2026-09-15T00:00:00+00:00",
+          "retrieved_at": "2026-10-05T09:00:00+09:00",
+          "vintage_date": "synthetic-v1"
+        },
+        "availability_policy": "가상 이용 가능 시각 (샘플 전용)"
+      },
+      "DGS10": {
+        "value": -0.04512832410685116,
+        "z": -0.13538497232055346,
+        "mean": -0.004762437967415981,
+        "std": 0.25473440774446576,
+        "window": 1260,
+        "status": "valid",
+        "raw_value": 2.592331346535947,
+        "transformed_value": -0.03924964870899306,
+        "transform": "difference_28d",
+        "source": "synthetic://macrolens/sample-v1",
+        "observation": {
+          "observation_date": "2026-10-02",
+          "value": 2.592331346535947,
+          "published_at": null,
+          "available_at": "2026-10-03T00:00:00+00:00",
+          "retrieved_at": "2026-10-05T09:00:00+09:00",
+          "vintage_date": "synthetic-v1"
+        },
+        "availability_policy": "가상 이용 가능 시각 (샘플 전용)"
+      },
+      "INDPRO": {
+        "value": 0.32941200551195915,
+        "z": 0.9882360165358774,
+        "mean": 3.008814989924493,
+        "std": 2.3342913800216487,
+        "window": 60,
+        "status": "valid",
+        "raw_value": 130.1461315303154,
+        "transformed_value": 5.3156458047511235,
+        "transform": "yoy",
+        "source": "synthetic://macrolens/sample-v1",
+        "observation": {
+          "observation_date": "2026-08-01",
+          "value": 130.1461315303154,
+          "published_at": null,
+          "available_at": "2026-09-15T00:00:00+00:00",
+          "retrieved_at": "2026-10-05T09:00:00+09:00",
+          "vintage_date": "synthetic-v1"
+        },
+        "availability_policy": "가상 이용 가능 시각 (샘플 전용)"
+      },
+      "UNRATE": {
+        "value": -0.12359145503852874,
+        "z": -0.3707743651155862,
+        "mean": -0.05372616157344668,
+        "std": 0.1816121665845666,
+        "window": 60,
+        "status": "valid",
+        "raw_value": 4.576629269367705,
+        "transformed_value": -0.12106329733610544,
+        "transform": "negative_3m",
+        "source": "synthetic://macrolens/sample-v1",
+        "observation": {
+          "observation_date": "2026-08-01",
+          "value": 4.576629269367705,
+          "published_at": null,
+          "available_at": "2026-09-15T00:00:00+00:00",
+          "retrieved_at": "2026-10-05T09:00:00+09:00",
+          "vintage_date": "synthetic-v1"
+        },
+        "availability_policy": "가상 이용 가능 시각 (샘플 전용)"
+      }
+    },
+    "factors": {
+      "inflation": {
+        "value": 0.32941200551195915,
+        "z": 0.9882360165358774,
+        "mean": 3.008814989924493,
+        "std": 2.3342913800216487,
+        "window": 60,
+        "status": "valid",
+        "raw_value": 130.1461315303154,
+        "transformed_value": 5.3156458047511235,
+        "transform": "yoy",
+        "source": "synthetic://macrolens/sample-v1",
+        "observation": {
+          "observation_date": "2026-08-01",
+          "value": 130.1461315303154,
+          "published_at": null,
+          "available_at": "2026-09-15T00:00:00+00:00",
+          "retrieved_at": "2026-10-05T09:00:00+09:00",
+          "vintage_date": "synthetic-v1"
+        },
+        "availability_policy": "가상 이용 가능 시각 (샘플 전용)"
+      },
+      "rates": {
+        "value": -0.04512832410685116,
+        "z": -0.13538497232055346,
+        "mean": -0.004762437967415981,
+        "std": 0.25473440774446576,
+        "window": 1260,
+        "status": "valid",
+        "raw_value": 2.592331346535947,
+        "transformed_value": -0.03924964870899306,
+        "transform": "difference_28d",
+        "source": "synthetic://macrolens/sample-v1",
+        "observation": {
+          "observation_date": "2026-10-02",
+          "value": 2.592331346535947,
+          "published_at": null,
+          "available_at": "2026-10-03T00:00:00+00:00",
+          "retrieved_at": "2026-10-05T09:00:00+09:00",
+          "vintage_date": "synthetic-v1"
+        },
+        "availability_policy": "가상 이용 가능 시각 (샘플 전용)"
+      },
+      "growth": {
+        "value": 0.32941200551195915,
+        "z": 0.9882360165358774,
+        "mean": 3.008814989924493,
+        "std": 2.3342913800216487,
+        "window": 60,
+        "status": "valid",
+        "raw_value": 130.1461315303154,
+        "transformed_value": 5.3156458047511235,
+        "transform": "yoy",
+        "source": "synthetic://macrolens/sample-v1",
+        "observation": {
+          "observation_date": "2026-08-01",
+          "value": 130.1461315303154,
+          "published_at": null,
+          "available_at": "2026-09-15T00:00:00+00:00",
+          "retrieved_at": "2026-10-05T09:00:00+09:00",
+          "vintage_date": "synthetic-v1"
+        },
+        "availability_policy": "가상 이용 가능 시각 (샘플 전용)"
+      },
+      "employment": {
+        "value": -0.12359145503852874,
+        "z": -0.3707743651155862,
+        "mean": -0.05372616157344668,
+        "std": 0.1816121665845666,
+        "window": 60,
+        "status": "valid",
+        "raw_value": 4.576629269367705,
+        "transformed_value": -0.12106329733610544,
+        "transform": "negative_3m",
+        "source": "synthetic://macrolens/sample-v1",
+        "observation": {
+          "observation_date": "2026-08-01",
+          "value": 4.576629269367705,
+          "published_at": null,
+          "available_at": "2026-09-15T00:00:00+00:00",
+          "retrieved_at": "2026-10-05T09:00:00+09:00",
+          "vintage_date": "synthetic-v1"
+        },
+        "availability_policy": "가상 이용 가능 시각 (샘플 전용)"
+      }
+    },
+    "scores": [
+      {
+        "sector": "에너지",
+        "score": 66.47060027559796,
+        "contributions": {
+          "employment": -0.0,
+          "growth": 8.235300137798978,
+          "inflation": 8.235300137798978,
+          "rates": -0.0
+        },
+        "rank": 1.0,
+        "gics": "10",
+        "rationale_ids": {
+          "employment": "EN-E",
+          "growth": "EN-G",
+          "inflation": "EN-I",
+          "rates": "EN-R"
+        },
+        "coefficients": {
+          "employment": 0,
+          "growth": 1,
+          "inflation": 1,
+          "rates": 0
+        },
+        "denominator": 2,
+        "normalized_weights": {
+          "employment": 0.0,
+          "growth": 0.5,
+          "inflation": 0.5,
+          "rates": 0.0
+        }
+      },
+      {
+        "sector": "소재",
+        "score": 62.917054258034106,
+        "contributions": {
+          "employment": -0.0,
+          "growth": 8.235300137798978,
+          "inflation": 4.117650068899489,
+          "rates": 0.5641040513356395
+        },
+        "rank": 2.0,
+        "gics": "15",
+        "rationale_ids": {
+          "employment": "MA-E",
+          "growth": "MA-G",
+          "inflation": "MA-I",
+          "rates": "MA-R"
+        },
+        "coefficients": {
+          "employment": 0,
+          "growth": 2,
+          "inflation": 1,
+          "rates": -1
+        },
+        "denominator": 4,
+        "normalized_weights": {
+          "employment": 0.0,
+          "growth": 0.5,
+          "inflation": 0.25,
+          "rates": -0.25
+        }
+      },
+      {
+        "sector": "정보기술",
+        "score": 61.73253891884616,
+        "contributions": {
+          "employment": -0.0,
+          "growth": 10.980400183731971,
+          "inflation": 0.0,
+          "rates": 0.7521387351141859
+        },
+        "rank": 3.0,
+        "gics": "45",
+        "rationale_ids": {
+          "employment": "IT-E",
+          "growth": "IT-G",
+          "inflation": "IT-I",
+          "rates": "IT-R"
+        },
+        "coefficients": {
+          "employment": 0,
+          "growth": 2,
+          "inflation": 0,
+          "rates": -1
+        },
+        "denominator": 3,
+        "normalized_weights": {
+          "employment": 0.0,
+          "growth": 0.6666666666666666,
+          "inflation": 0.0,
+          "rates": -0.3333333333333333
+        }
+      },
+      {
+        "sector": "금융",
+        "score": 55.14551376183576,
+        "contributions": {
+          "employment": -3.0897863759632185,
+          "growth": 8.235300137798978,
+          "inflation": 0.0,
+          "rates": -0.0
+        },
+        "rank": 4.0,
+        "gics": "40",
+        "rationale_ids": {
+          "employment": "FI-E",
+          "growth": "FI-G",
+          "inflation": "FI-I",
+          "rates": "FI-R"
+        },
+        "coefficients": {
+          "employment": 1,
+          "growth": 1,
+          "inflation": 0,
+          "rates": 0
+        },
+        "denominator": 2,
+        "normalized_weights": {
+          "employment": 0.5,
+          "growth": 0.5,
+          "inflation": 0.0,
+          "rates": 0.0
+        }
+      },
+      {
+        "sector": "커뮤니케이션 서비스",
+        "score": 54.182481243004695,
+        "contributions": {
+          "employment": -2.059857583975479,
+          "growth": 5.490200091865986,
+          "inflation": 0.0,
+          "rates": 0.7521387351141859
+        },
+        "rank": 5.0,
+        "gics": "50",
+        "rationale_ids": {
+          "employment": "CM-E",
+          "growth": "CM-G",
+          "inflation": "CM-I",
+          "rates": "CM-R"
+        },
+        "coefficients": {
+          "employment": 1,
+          "growth": 1,
+          "inflation": 0,
+          "rates": -1
+        },
+        "denominator": 3,
+        "normalized_weights": {
+          "employment": 0.3333333333333333,
+          "growth": 0.3333333333333333,
+          "inflation": 0.0,
+          "rates": -0.3333333333333333
+        }
+      },
+      {
+        "sector": "부동산",
+        "score": 53.70096498358916,
+        "contributions": {
+          "employment": -1.5448931879816092,
+          "growth": 4.117650068899489,
+          "inflation": 0.0,
+          "rates": 1.128208102671279
+        },
+        "rank": 6.0,
+        "gics": "60",
+        "rationale_ids": {
+          "employment": "RE-E",
+          "growth": "RE-G",
+          "inflation": "RE-I",
+          "rates": "RE-R"
+        },
+        "coefficients": {
+          "employment": 1,
+          "growth": 1,
+          "inflation": 0,
+          "rates": -2
+        },
+        "denominator": 4,
+        "normalized_weights": {
+          "employment": 0.25,
+          "growth": 0.25,
+          "inflation": 0.0,
+          "rates": -0.5
+        }
+      },
+      {
+        "sector": "산업재",
+        "score": 52.50948874580281,
+        "contributions": {
+          "employment": -1.2359145503852873,
+          "growth": 6.588240110239182,
+          "inflation": -3.294120055119591,
+          "rates": 0.4512832410685116
+        },
+        "rank": 7.0,
+        "gics": "20",
+        "rationale_ids": {
+          "employment": "IN-E",
+          "growth": "IN-G",
+          "inflation": "IN-I",
+          "rates": "IN-R"
+        },
+        "coefficients": {
+          "employment": 1,
+          "growth": 2,
+          "inflation": -1,
+          "rates": -1
+        },
+        "denominator": 5,
+        "normalized_weights": {
+          "employment": 0.2,
+          "growth": 0.4,
+          "inflation": -0.2,
+          "rates": -0.2
+        }
+      },
+      {
+        "sector": "경기소비재",
+        "score": 47.97945414029794,
+        "contributions": {
+          "employment": -2.4718291007705746,
+          "growth": 3.294120055119591,
+          "inflation": -3.294120055119591,
+          "rates": 0.4512832410685116
+        },
+        "rank": 8.0,
+        "gics": "25",
+        "rationale_ids": {
+          "employment": "CD-E",
+          "growth": "CD-G",
+          "inflation": "CD-I",
+          "rates": "CD-R"
+        },
+        "coefficients": {
+          "employment": 2,
+          "growth": 1,
+          "inflation": -1,
+          "rates": -1
+        },
+        "denominator": 5,
+        "normalized_weights": {
+          "employment": 0.4,
+          "growth": 0.2,
+          "inflation": -0.2,
+          "rates": -0.2
+        }
+      },
+      {
+        "sector": "유틸리티",
+        "score": 46.01407737836239,
+        "contributions": {
+          "employment": -0.0,
+          "growth": -5.490200091865986,
+          "inflation": 0.0,
+          "rates": 1.5042774702283719
+        },
+        "rank": 9.0,
+        "gics": "55",
+        "rationale_ids": {
+          "employment": "UT-E",
+          "growth": "UT-G",
+          "inflation": "UT-I",
+          "rates": "UT-R"
+        },
+        "coefficients": {
+          "employment": 0,
+          "growth": -1,
+          "inflation": 0,
+          "rates": -2
+        },
+        "denominator": 3,
+        "normalized_weights": {
+          "employment": 0.0,
+          "growth": -0.3333333333333333,
+          "inflation": 0.0,
+          "rates": -0.6666666666666666
+        }
+      },
+      {
+        "sector": "필수소비재",
+        "score": 43.873697101518275,
+        "contributions": {
+          "employment": 1.5448931879816092,
+          "growth": -4.117650068899489,
+          "inflation": -4.117650068899489,
+          "rates": 0.5641040513356395
+        },
+        "rank": 10.0,
+        "gics": "30",
+        "rationale_ids": {
+          "employment": "CS-E",
+          "growth": "CS-G",
+          "inflation": "CS-I",
+          "rates": "CS-R"
+        },
+        "coefficients": {
+          "employment": -1,
+          "growth": -1,
+          "inflation": -1,
+          "rates": -1
+        },
+        "denominator": 4,
+        "normalized_weights": {
+          "employment": -0.25,
+          "growth": -0.25,
+          "inflation": -0.25,
+          "rates": -0.25
+        }
+      },
+      {
+        "sector": "헬스케어",
+        "score": 42.8929079648723,
+        "contributions": {
+          "employment": -0.0,
+          "growth": -8.235300137798978,
+          "inflation": 0.0,
+          "rates": 1.128208102671279
+        },
+        "rank": 11.0,
+        "gics": "35",
+        "rationale_ids": {
+          "employment": "HC-E",
+          "growth": "HC-G",
+          "inflation": "HC-I",
+          "rates": "HC-R"
+        },
+        "coefficients": {
+          "employment": 0,
+          "growth": -1,
+          "inflation": 0,
+          "rates": -1
+        },
+        "denominator": 2,
+        "normalized_weights": {
+          "employment": 0.0,
+          "growth": -0.5,
+          "inflation": 0.0,
+          "rates": -0.5
+        }
+      }
+    ],
+    "limitations": [
+      "계수는 정성 가설이며 예측력·투자 효용은 미검증입니다. 점수는 확률·기대수익률이 아닙니다.",
+      "과거 vintage는 날짜 단위이며 장중 발표시각을 보장하지 않습니다. 엄밀한 과거 검증용 유효성은 false입니다.",
+      "현재 수집은 수집 시각부터, 과거 조회는 미국 중부 전일 vintage를 다음날 00:00부터 사용합니다. 최초 이용 가능 시각을 복원한 것이 아닙니다.",
+      "샘플의 값·이용 시각·발표 주기는 합성입니다.",
+      "관측 나이 제한(월별 75일·일별 7일)은 공식 발표 달력이 아닌 잠정 규칙입니다.",
+      "기여도 차이는 산술 비교이며 새 발표·수정·기준창의 인과 분해가 아닙니다.",
+      "가격·매매·백테스트·4주/13주 추세·자동 실행은 미구현입니다."
+    ],
+    "model_kind": "research",
+    "model_status": "frozen",
+    "model_frozen_at": "2026-10-08T13:22:39.386450+00:00",
+    "rationale_document": "docs/model_card.md",
+    "ranking_policy": "average",
+    "kind": "original",
+    "parent_run_id": null,
+    "history": {
+      "week_slot": "2026-10-05",
+      "previous_slot": "2026-09-28",
+      "selection_rule": "같은 모드·시점규칙, 시작 전 완료된 실행 중 주별 마지막 생성 실행; 재현 제외; 같은 연구 모델 계열 (버전 변경은 비교 불가 표시)",
+      "previous_week": null,
+      "last_available": null,
+      "warnings": []
+    }
+  }
+}
